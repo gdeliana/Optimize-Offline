@@ -43,6 +43,9 @@
 		"iphlpsvc",
 		"wisvc",
 		"DispBrokerDesktopSvc",
-		"StorSvc"
+		"StorSvc",
+		"UsoSvc",
+		"WaaSMedicSvc",
+		"wuauserv"
 	]
 }
