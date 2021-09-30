@@ -5,7 +5,6 @@
 	"Services": [
 		"BcastDVRUserService",
 		"BDESVC",
-		"cbdhsvc",
 		"DiagTrack",
 		"DisplayEnhancementService",
 		"DoSvc",
