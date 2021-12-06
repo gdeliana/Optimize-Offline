@@ -261,6 +261,7 @@ Function Optimize-Offline
 		{
 			$Host.UI.RawUI.WindowTitle = "Validating Image Metadata."
 			$InstallInfo = $InstallWim | Get-ImageData -Index $ImageIndex -ErrorAction Stop
+			$Global:InstallInfo = $InstallInfo
 		}
 		Catch
 		{
@@ -290,7 +291,7 @@ Function Optimize-Offline
 			Break
 		}
 
-		If ($InstallInfo.InstallationType.Contains('Server') -or $InstallInfo.InstallationType.Contains('WindowsPE'))
+		If ($InstallInfo.InstallationType.Contains('WindowsPE'))
 		{
 			$PSCmdlet.WriteWarning($OptimizeData.UnsupportedImageType -f $InstallInfo.InstallationType)
 			$TempDirectory | Purge
@@ -1090,11 +1091,17 @@ Function Optimize-Offline
 						{
 							If (Test-Path -Path $OptimizeOffline.Lists.Capabilities.Whitelist)
 							{
-								$JSON = Get-Content -Path $OptimizeOffline.Lists.Capabilities.Whitelist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
+								$Names = Get-Content -Path $OptimizeOffline.Lists.Capabilities.Whitelist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop | Select-Object -ExpandProperty Name
 
 								$WindowsCapabilities | ForEach-Object -Process {
-									If ($PSItem.Name -notin $JSON.Name)
-									{
+									$ToRemove = $true
+									Foreach($Name in $Names){
+										If ($PSItem.Name -eq $Name -or ($Name -match "\*" -and $PSItem.Name -like $Name)){
+											$ToRemove = $false
+											Break
+										}
+									}
+									If($ToRemove){
 										[void]$capabilitiesToRemove.Add($PSItem)
 									}
 								}
@@ -1105,12 +1112,14 @@ Function Optimize-Offline
 						{
 							If (Test-Path -Path $OptimizeOffline.Lists.Capabilities.Blacklist)
 							{
-								$JSON = Get-Content -Path $OptimizeOffline.Lists.Capabilities.Blacklist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
+								$Names = Get-Content -Path $OptimizeOffline.Lists.Capabilities.Blacklist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop | Select-Object -ExpandProperty Name
 
 								$WindowsCapabilities | ForEach-Object -Process {
-									If ($PSItem.Name -in $JSON.Name)
-									{
-										[void]$capabilitiesToRemove.Add($PSItem)
+									Foreach($Name in $Names){
+										If ($PSItem.Name -eq $Name -or ($Name -match "\*" -and $PSItem.Name -like $Name)){
+											[void]$capabilitiesToRemove.Add($PSItem)
+											Break
+										}
 									}
 								}
 							}
@@ -1131,7 +1140,7 @@ Function Optimize-Offline
 							LogLevel         = 1
 							ErrorAction      = 'Stop'
 						}
-						Log ($OptimizeData.RemovingWindowsCapability -f $PSItem.Name.Split('~')[0])
+						Log ($OptimizeData.RemovingWindowsCapability -f $PSItem.Name)
 						[Void](Remove-WindowsCapability @RemoveCapabilityParams)
 					}
 
@@ -1170,11 +1179,18 @@ Function Optimize-Offline
 
 							If (Test-Path -Path $OptimizeOffline.Lists.Packages.Whitelist)
 							{
-								$JSON = Get-Content -Path $OptimizeOffline.Lists.Packages.Whitelist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
+								$PackageNames = Get-Content -Path $OptimizeOffline.Lists.Packages.Whitelist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop | Select-Object -ExpandProperty PackageName
 
 								$WindowsPackages | ForEach-Object -Process {
-									If ($PSItem.PackageName -notin $JSON.PackageName)
-									{
+									$ToRemove = $true
+									Foreach($PackageName in $PackageNames){
+										If ($PSItem.PackageName -eq $PackageName -or ($PackageName -Match "\*" -and $PSItem.PackageName -like $PackageName))
+										{
+											$ToRemove = $false
+											Break
+										}
+									}
+									If($ToRemove){
 										[void]$packagesToRemove.Add($PSItem)
 									}
 								}
@@ -1186,12 +1202,15 @@ Function Optimize-Offline
 							
 							If (Test-Path -Path $OptimizeOffline.Lists.Packages.Blacklist)
 							{
-								$JSON = Get-Content -Path $OptimizeOffline.Lists.Packages.Blacklist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop
+								$PackageNames = Get-Content -Path $OptimizeOffline.Lists.Packages.Blacklist -Raw -ErrorAction Stop | ConvertFrom-Json -ErrorAction Stop | Select-Object -ExpandProperty PackageName
 
 								$WindowsPackages | ForEach-Object -Process {
-									If ($PSItem.PackageName -in $JSON.PackageName)
-									{
-										[void]$packagesToRemove.Add($PSItem)
+									Foreach($PackageName in $PackageNames){
+										If ($PSItem.PackageName -eq $PackageName -or ($PackageName -Match "\*" -and $PSItem.PackageName -like $PackageName))
+										{
+											[void]$packagesToRemove.Add($PSItem)
+											Break
+										}
 									}
 								}
 							}
@@ -1213,7 +1232,7 @@ Function Optimize-Offline
 							LogLevel         = 1
 							ErrorAction      = 'Stop'
 						}
-						Log ($OptimizeData.RemovingWindowsPackage -f $PSItem.PackageName.Replace('Package', $null).Split('~')[0].TrimEnd('-'))
+						Log ($OptimizeData.RemovingWindowsPackage -f $PSItem.PackageName)
 						[Void](Remove-WindowsPackage @RemovePackageParams)
 					}
 					$DynamicParams.Packages = $($packagesToRemove.Count -gt 0)
@@ -2583,6 +2602,7 @@ on $(Get-Date -UFormat "%m/%d/%Y at %r")
 		$ErrorActionPreference = $LocalScope.ErrorActionPreference
 		$Global:ProgressPreference = $LocalScope.ProgressPreference
 		$Global:Error.Clear()
+		$Global:InstallInfo = $null
 		Log "Clearing temp directory..."
 		Start-Sleep 5
 		Remove-Item -Recurse -Force -ErrorAction Ignore $TempDirectory
