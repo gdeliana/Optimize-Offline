@@ -37,9 +37,10 @@
   "ISO": "Prompt",
   "CompressionType": "Maximum",
   "SelectiveRegistry": {
-    "DisableWindowsUpdate": true,
+    "DisableWindowsUpgrade": true,
     "DisableWindowsUpdateMicrosoft": false,
     "DisableDriverUpdate": true,
-    "DormantOneDrive": true
+    "DormantOneDrive": true,
+    "Disable3rdPartyApps": true
   }
 }

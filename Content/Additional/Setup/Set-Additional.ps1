@@ -130,6 +130,10 @@ Function Set-Additional
             Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\cbdhsvc" -Name Start -Value 4 -Force
         }
 
+        If ($Build -ge 18363) {
+            Set-ItemProperty -Path "HKCU:\SOFTWARE\Classes\CLSID\{1d64637d-31e9-4b06-9124-e83fb178ac6e}\TreatAs" -Name "(Default)" -Value "{64bc32b5-4eec-4de7-972d-bd8bd0324537}" -Force
+        }
+
         # Uninstall Cortana.
         If ($Build -ge 19041) { Get-AppxPackage -Name *Microsoft.549981C3F5F10* | Remove-AppxPackage -AllUsers | Out-Null }
 
@@ -146,7 +150,9 @@ Function Set-Additional
             If ($QueryReFS) { Invoke-Expression -Command ('FSUTIL BEHAVIOR SET DISABLEDELETENOTIFY REFS 0') | Out-Null }
 
             # Disable Swapfile.sys which can improve SSD performance.
-            Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name SwapfileControl -Value 0 -Force
+            If(!(Get-AppxProvisionedPackage -Online | Where-Object -Property DisplayName -EQ Microsoft.WindowsStore)){
+                Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name SwapfileControl -Value 0 -Force
+            }
 
             # Disable Prefetch and Superfetch (optimal for SSD drives).
             If (!(Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters")) { New-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" -ItemType Directory -Force | Out-Null }
@@ -181,7 +187,7 @@ Function Set-Additional
         If ($Memory -is [Double]) { Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control" -Name SvcHostSplitThresholdInKB -Value $Memory -Force }
 
         # If the Windows 10 build is 19041, use the new DISM PowerShell cmdlet to disable the Reserved Storage feature for future updates.
-        If ($Build -eq 19041 -and (Get-WindowsReservedStorageState | Select-Object -ExpandProperty ReservedStorageState) -ne 'Disabled') { Set-WindowsReservedStorageState -State Disabled }
+        If ($Build -ge 19041 -and (Get-WindowsReservedStorageState | Select-Object -ExpandProperty ReservedStorageState) -ne 'Disabled') { Set-WindowsReservedStorageState -State Disabled }
 
         # Remove the dism log file if present.
         If (Test-Path -Path $Env:SystemRoot\Logs\DISM\dism.log) { Remove-Item -Path $Env:SystemRoot\Logs\DISM\dism.log -Force }
