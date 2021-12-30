@@ -81,6 +81,9 @@ Function Optimize-Offline
 			DisableDriverUpdate = $false
 			DormantOneDrive = $false
 			Disable3rdPartyApps = $false
+			W11ClassicInterface = $false
+			ClassicSearchExplorer = $false
+			RemoveTaskbarPinnedIcons = $false
 		},
 		[Parameter(HelpMessage = 'Removal of windows services.')]
 		[ValidateSet('None', 'List', 'Advanced', 'Select')]
@@ -771,7 +774,9 @@ Function Optimize-Offline
 						ErrorAction      = 'Stop'
 					}
 					Log ($OptimizeData.RemovingWindowsApp -f $PSItem.DisplayName)
-					[Void](Remove-AppxProvisionedPackage @RemoveAppxParams)
+					If ($PSItem.DisplayName -notin @("Microsoft.SecHealthUI") -or [System.Environment]::OSVersion.Version.Build -lt '22000'){
+						[Void](Remove-AppxProvisionedPackage @RemoveAppxParams)
+					}
 					$RemovedAppxPackages.Add($PSItem.DisplayName, $PSItem.PackageName)
 					$RemovedPackages.Add($PSItem.DisplayName, $PSItem.PackageName)
 				}
@@ -1547,7 +1552,8 @@ Function Optimize-Offline
 		#endregion DeveloperMode Integration
 
 		#region Windows Store Integration
-		If ($WindowsStore.IsPresent -and (Test-Path -Path $OptimizeOffline.WindowsStore -Filter Microsoft.WindowsStore*.*xbundle) -and !(Get-AppxProvisionedPackage -Path $InstallMount -ScratchDirectory $ScratchFolder -LogPath $DISMLog -LogLevel 1 | Where-Object -Property DisplayName -EQ Microsoft.WindowsStore))
+		$DynamicParams.WindowsStore = (Get-AppxProvisionedPackage -Path $InstallMount -ScratchDirectory $ScratchFolder -LogPath $DISMLog -LogLevel 1 | Where-Object -Property DisplayName -EQ Microsoft.WindowsStore)
+		If ($WindowsStore.IsPresent -and (Test-Path -Path $OptimizeOffline.WindowsStore -Filter Microsoft.WindowsStore*.*xbundle) -and !$DynamicParams.WindowsStore)
 		{
 			Log $OptimizeData.IntegratingWindowsStore
 			$StoreBundle = Get-ChildItem -Path $OptimizeOffline.WindowsStore -Filter Microsoft.WindowsStore*.*xbundle -File | Select-Object -ExpandProperty FullName
@@ -1769,7 +1775,7 @@ Function Optimize-Offline
 				RegKey -Path "HKLM:\WIM_HKLM_SOFTWARE\WOW6432Node\Policies\Microsoft\Edge" -Name "HideFirstRunExperience" -Value 1 -Type DWord
 				RegKey -Path "HKLM:\WIM_HKLM_SOFTWARE\Policies\Microsoft\Edge" -Name "BackgroundModeEnabled" -Value 0 -Type DWord
 				RegKey -Path "HKLM:\WIM_HKLM_SOFTWARE\WOW6432Node\Policies\Microsoft\Edge" -Name "BackgroundModeEnabled" -Value 0 -Type DWord
-				If ($InstallInfo.Build -ge '19041' -and (Get-ItemPropertyValue -Path "HKLM:\WIM_HKLM_SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name UBR -ErrorAction Ignore) -ge 1023) { RegKey -Path "HKLM:\WIM_HKLM_SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" -Name "EnableFeeds" -Value 0 -Type DWord }
+				If (($InstallInfo.Build -eq '19041' -and (Get-ItemPropertyValue -Path "HKLM:\WIM_HKLM_SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name UBR -ErrorAction Ignore) -ge 1023) -or $InstallInfo.Build -gt '19041') { RegKey -Path "HKLM:\WIM_HKLM_SOFTWARE\Policies\Microsoft\Windows\Windows Feeds" -Name "EnableFeeds" -Value 0 -Type DWord }
 			}
 			RegHives -Unload
 		}
@@ -2319,6 +2325,18 @@ Function Optimize-Offline
 			& $_.FullName
 		}
 		#endregion selective registry
+
+		#region disable W11 boot image HW checks
+		If ($InstallInfo.Build -ge '22000' -and (Test-Path -Path $BootMount)) {
+			RegHives -Load
+			RegKey -Path "HKLM:\BOOT_HKLM_SYSTEM\Setup\LabConfig" -Name "BypassCPUCheck" -Type DWord -Value 1
+			RegKey -Path "HKLM:\BOOT_HKLM_SYSTEM\Setup\LabConfig" -Name "BypassRAMCheck" -Type DWord -Value 1
+			RegKey -Path "HKLM:\BOOT_HKLM_SYSTEM\Setup\LabConfig" -Name "BypassSecureBootCheck" -Type DWord -Value 1
+			RegKey -Path "HKLM:\BOOT_HKLM_SYSTEM\Setup\LabConfig" -Name "BypassStorageCheck" -Type DWord -Value 1
+			RegKey -Path "HKLM:\BOOT_HKLM_SYSTEM\Setup\LabConfig" -Name "BypassTPMCheck" -Type DWord -Value 1
+			RegHives -Unload
+	  	}
+		#endregion disable W11 boot image HW checks
 
 		#region Create Package Summary
 		@('DeveloperMode', 'WindowsStore', 'MicrosoftEdge', 'MicrosoftEdgeChromium', 'DataDeduplication', 'InstallImageDrivers', 'BootImageDrivers', 'RecoveryImageDrivers', 'NetFx3') | ForEach-Object -Process { If ($DynamicParams.ContainsKey($PSItem)) { $DynamicParams.PackageSummary = $true } }
