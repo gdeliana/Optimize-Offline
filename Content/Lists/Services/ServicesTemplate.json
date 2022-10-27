@@ -1,6 +1,5 @@
 ﻿{
     "__Info":  [
-                   "start key values",
                    "0 = Boot",
                    "1 = System",
                    "2 = Automatic",
@@ -8,6 +7,2075 @@
                    "4 = Disabled"
                ],
     "Services":  [
-                     
+                     {
+                         "description":  "Agent Activation Runtime",
+                         "name":  "AarSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Acx01000",
+                         "name":  "Acx01000",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AllJoyn Router Service",
+                         "name":  "AJRouter",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Application Layer Gateway Service",
+                         "name":  "ALG",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AppID Driver",
+                         "name":  "AppID",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Application Identity",
+                         "name":  "AppIDSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Application Information",
+                         "name":  "Appinfo",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Smartlocker Filter Driver",
+                         "name":  "applockerfltr",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Application Management",
+                         "name":  "AppMgmt",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "App Readiness",
+                         "name":  "AppReadiness",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AppvStrm",
+                         "name":  "AppvStrm",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AppvVemgr",
+                         "name":  "AppvVemgr",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AppvVfs",
+                         "name":  "AppvVfs",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AppX Deployment Service (AppXSVC)",
+                         "name":  "AppXSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AssignedAccessManager Service",
+                         "name":  "AssignedAccessManagerSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Audio Endpoint Builder",
+                         "name":  "AudioEndpointBuilder",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Audio",
+                         "name":  "Audiosrv",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Cellular Time",
+                         "name":  "autotimesvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "ActiveX Installer (AxInstSV)",
+                         "name":  "AxInstSV",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "GameDVR and Broadcast User Service",
+                         "name":  "BcastDVRUserService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "BitLocker Drive Encryption Service",
+                         "name":  "BDESVC",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Base Filtering Engine",
+                         "name":  "BFE",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "",
+                         "name":  "bfs",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Bind Filter Driver",
+                         "name":  "bindflt",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Background Intelligent Transfer Service",
+                         "name":  "BITS",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Bluetooth User Support Service",
+                         "name":  "BluetoothUserService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Browser",
+                         "name":  "bowser",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Background Tasks Infrastructure Service",
+                         "name":  "BrokerInfrastructure",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Bluetooth Audio Gateway Service",
+                         "name":  "BTAGService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "AVCTP service",
+                         "name":  "BthAvctpSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Bluetooth Support Service",
+                         "name":  "bthserv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Capability Access Manager Service",
+                         "name":  "camsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "CaptureService",
+                         "name":  "CaptureService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Clipboard User Service",
+                         "name":  "cbdhsvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Connected Devices Platform Service",
+                         "name":  "CDPSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Connected Devices Platform User Service",
+                         "name":  "CDPUserSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Certificate Propagation",
+                         "name":  "CertPropSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Cloud Files Filter Driver",
+                         "name":  "CldFlt",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Client License Service (ClipSVC)",
+                         "name":  "ClipSVC",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Cloud Identity Service",
+                         "name":  "cloudidsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "COM+ System Application",
+                         "name":  "COMSysApp",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Console Driver",
+                         "name":  "condrv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "ConsentUX",
+                         "name":  "ConsentUxUserSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "CoreMessaging",
+                         "name":  "CoreMessagingRegistrar",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "CredentialEnrollmentManagerUserSvc",
+                         "name":  "CredentialEnrollmentManagerUserSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Cryptographic Services",
+                         "name":  "CryptSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Offline Files",
+                         "name":  "CscService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DCOM Server Process Launcher",
+                         "name":  "DcomLaunch",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "",
+                         "name":  "dcsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Optimize drives",
+                         "name":  "defragsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DeviceAssociationBroker",
+                         "name":  "DeviceAssociationBrokerSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Device Association Service",
+                         "name":  "DeviceAssociationService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Device Install Service",
+                         "name":  "DeviceInstall",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DevicePicker",
+                         "name":  "DevicePickerUserSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DevicesFlow",
+                         "name":  "DevicesFlowUserSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DevQuery Background Discovery Broker",
+                         "name":  "DevQueryBroker",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DHCP Client",
+                         "name":  "Dhcp",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Microsoft (R) Diagnostics Hub Standard Collector Service",
+                         "name":  "diagnosticshub.standardcollector.service",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Diagnostic Execution Service",
+                         "name":  "diagsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Connected User Experiences and Telemetry",
+                         "name":  "DiagTrack",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Display Policy Service",
+                         "name":  "DispBrokerDesktopSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Display Enhancement Service",
+                         "name":  "DisplayEnhancementService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Device Management Enrollment Service",
+                         "name":  "DmEnrollmentSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Device Management Wireless Application Protocol (WAP) Push message Routing Service",
+                         "name":  "dmwappushservice",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "DNS Client",
+                         "name":  "Dnscache",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Delivery Optimization",
+                         "name":  "DoSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Wired AutoConfig",
+                         "name":  "dot3svc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Diagnostic Policy Service",
+                         "name":  "DPS",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Device Setup Manager",
+                         "name":  "DsmSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Data Sharing Service",
+                         "name":  "DsSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Data Usage",
+                         "name":  "DusmSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Extensible Authentication Protocol",
+                         "name":  "EapHost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Edge Update Service (edgeupdate)",
+                         "name":  "edgeupdate",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Microsoft Edge Update Service (edgeupdatem)",
+                         "name":  "edgeupdatem",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Encrypting File System (EFS)",
+                         "name":  "EFS",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Embedded Mode",
+                         "name":  "embeddedmode",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Enterprise App Management Service",
+                         "name":  "EntAppSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Event Log",
+                         "name":  "EventLog",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "COM+ Event System",
+                         "name":  "EventSystem",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "",
+                         "name":  "ExecutionContext",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "exFAT File System Driver",
+                         "name":  "exfat",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "FAT12/16/32 File System Driver",
+                         "name":  "fastfat",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Function Discovery Provider Host",
+                         "name":  "fdPHost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Function Discovery Resource Publication",
+                         "name":  "FDResPub",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "File History Service",
+                         "name":  "fhsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Filetrace",
+                         "name":  "Filetrace",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Font Cache Service",
+                         "name":  "FontCache",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Camera Frame Server",
+                         "name":  "FrameServer",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "FrameServerMonitor",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "File System Dependency Minifilter",
+                         "name":  "FsDepends",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft GPIO Class Extension Driver",
+                         "name":  "GPIOClx0101",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Group Policy Client",
+                         "name":  "gpsvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "GraphicsPerfSvc",
+                         "name":  "GraphicsPerfSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Human Interface Device Service",
+                         "name":  "hidserv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "HidSpiCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "HTTP Service",
+                         "name":  "HTTP",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "HV Host Service",
+                         "name":  "HvHost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Hardware Notifications Class Extension Driver",
+                         "name":  "HwNClx0101",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Mobile Hotspot Service",
+                         "name":  "icssvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "IKE and AuthIP IPsec Keying Modules",
+                         "name":  "IKEEXT",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Indirect Displays Kernel-Mode Driver",
+                         "name":  "IndirectKmd",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Store Install Service",
+                         "name":  "InstallService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "InventorySvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "IP Traffic Filter Driver",
+                         "name":  "IpFilterDriver",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "IP Helper",
+                         "name":  "iphlpsvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "IP Network Address Translator",
+                         "name":  "IPNAT",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "IPT",
+                         "name":  "IPT",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "IP Translation Configuration Service",
+                         "name":  "IpxlatCfgSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "kbldfltr",
+                         "name":  "kbldfltr",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "CNG Key Isolation",
+                         "name":  "KeyIso",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Kernel Streaming Thunks",
+                         "name":  "ksthunk",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "KtmRm for Distributed Transaction Coordinator",
+                         "name":  "KtmRm",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Server",
+                         "name":  "LanmanServer",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Workstation",
+                         "name":  "LanmanWorkstation",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Geolocation Service",
+                         "name":  "lfsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows License Manager Service",
+                         "name":  "LicenseManager",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Link-Layer Topology Discovery Mapper I/O Driver",
+                         "name":  "lltdio",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Link-Layer Topology Discovery Mapper",
+                         "name":  "lltdsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "TCP/IP NetBIOS Helper",
+                         "name":  "lmhosts",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Local Session Manager",
+                         "name":  "LSM",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "UAC File Virtualization",
+                         "name":  "luafv",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Language Experience Service",
+                         "name":  "LxpSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Downloaded Maps Manager",
+                         "name":  "MapsBroker",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "MBB Network Adapter Class Extension",
+                         "name":  "MbbCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "McpManagementService",
+                         "name":  "McpManagementService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "MessagingService",
+                         "name":  "MessagingService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Mixed Reality OpenXR Service",
+                         "name":  "MixedRealityOpenXRSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Multimedia Class Scheduler",
+                         "name":  "MMCSS",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Modem",
+                         "name":  "Modem",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Defender Firewall Authorization Driver",
+                         "name":  "mpsdrv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Defender Firewall",
+                         "name":  "mpssvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "WebDav Client Redirector Driver",
+                         "name":  "MRxDAV",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "SMB MiniRedirector Wrapper and Engine",
+                         "name":  "mrxsmb",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "SMB 2.0 MiniRedirector",
+                         "name":  "mrxsmb20",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft MAC Bridge",
+                         "name":  "MsBridge",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Distributed Transaction Coordinator",
+                         "name":  "MSDTC",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft iSCSI Initiator Service",
+                         "name":  "MSiSCSI",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Installer",
+                         "name":  "msiserver",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Link-Layer Discovery Protocol",
+                         "name":  "MsLldp",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "MsQuic",
+                         "name":  "MsQuic",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "MsRPC",
+                         "name":  "MsRPC",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "NativeWiFi Filter",
+                         "name":  "NativeWifiP",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Natural Authentication",
+                         "name":  "NaturalAuthentication",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Connectivity Assistant",
+                         "name":  "NcaSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Connection Broker",
+                         "name":  "NcbService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Connected Devices Auto-Setup",
+                         "name":  "NcdAutoSetup",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Network Adapter Multiplexor Protocol",
+                         "name":  "NdisImPlatform",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access NDIS TAPI Driver",
+                         "name":  "NdisTapi",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "NDIS Usermode I/O Protocol",
+                         "name":  "Ndisuio",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access LEGACY NDIS WAN Driver",
+                         "name":  "ndiswanlegacy",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "NDKPerf",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "NDKPing Driver",
+                         "name":  "NDKPing",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "NDIS Proxy Driver",
+                         "name":  "ndproxy",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Network Data Usage Monitoring Driver",
+                         "name":  "Ndu",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Network Adapter Wdf Class Extension Library",
+                         "name":  "NetAdapterCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Netlogon",
+                         "name":  "Netlogon",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Connections",
+                         "name":  "Netman",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network List Service",
+                         "name":  "netprofm",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Setup Service",
+                         "name":  "NetSetupSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Microsoft Passport Container",
+                         "name":  "NgcCtnrSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Passport",
+                         "name":  "NgcSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Location Awareness",
+                         "name":  "NlaSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "NPSMSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Network Store Interface Service",
+                         "name":  "nsi",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Ntfs",
+                         "name":  "Ntfs",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "OneSyncSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Peer Networking Identity Manager",
+                         "name":  "p2pimsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Peer Networking Grouping",
+                         "name":  "p2psvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "P9Rdr",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "P9RdrService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Program Compatibility Assistant Service",
+                         "name":  "PcaSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "PEAUTH",
+                         "name":  "PEAUTH",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "BranchCache",
+                         "name":  "PeerDistSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "PenService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Perception Simulation Service",
+                         "name":  "perceptionsimulation",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Performance Counter DLL Host",
+                         "name":  "PerfHost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Phone Service",
+                         "name":  "PhoneSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Contact Data",
+                         "name":  "PimIndexMaintenanceSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Packet Monitor Driver",
+                         "name":  "PktMon",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Performance Logs \u0026 Alerts",
+                         "name":  "pla",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Plug and Play",
+                         "name":  "PlugPlay",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "PNRP Machine Name Publication Service",
+                         "name":  "PNRPAutoReg",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Peer Name Resolution Protocol",
+                         "name":  "PNRPsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "IPsec Policy Agent",
+                         "name":  "PolicyAgent",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "portcfg",
+                         "name":  "portcfg",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Power",
+                         "name":  "Power",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "PrintWorkflow",
+                         "name":  "PrintWorkflowUserSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "User Profile Service",
+                         "name":  "ProfSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows PushToInstall Service",
+                         "name":  "PushToInstall",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Quality Windows Audio Video Experience",
+                         "name":  "QWAVE",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "QWAVE driver",
+                         "name":  "QWAVEdrv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access Auto Connection Driver",
+                         "name":  "RasAcd",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access Auto Connection Manager",
+                         "name":  "RasAuto",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access Connection Manager",
+                         "name":  "RasMan",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Desktop Device Redirector Driver",
+                         "name":  "RDPDR",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Desktop Video Miniport Driver",
+                         "name":  "RdpVideoMiniport",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "ReFS",
+                         "name":  "ReFS",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "ReFSv1",
+                         "name":  "ReFSv1",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Retail Demo Service",
+                         "name":  "RetailDemo",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Radio Management Service",
+                         "name":  "RmSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "RPC Endpoint Mapper",
+                         "name":  "RpcEptMapper",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Remote Procedure Call (RPC) Locator",
+                         "name":  "RpcLocator",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Procedure Call (RPC)",
+                         "name":  "RpcSs",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Link-Layer Topology Discovery Responder",
+                         "name":  "rspndr",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Security Accounts Manager",
+                         "name":  "SamSs",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Smart Card",
+                         "name":  "SCardSvr",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Smart Card Device Enumeration Service",
+                         "name":  "ScDeviceEnum",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Smart card PnP Class Filter Driver",
+                         "name":  "scfilter",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Task Scheduler",
+                         "name":  "Schedule",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Smart Card Removal Policy",
+                         "name":  "SCPolicySvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Backup",
+                         "name":  "SDRSVC",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Secondary Logon",
+                         "name":  "seclogon",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Security Service",
+                         "name":  "SecurityHealthService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Payments and NFC/SE Manager",
+                         "name":  "SEMgrSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "System Event Notification Service",
+                         "name":  "SENS",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Defender Advanced Threat Protection Service",
+                         "name":  "Sense",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Sensor Data Service",
+                         "name":  "SensorDataService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Sensor Service",
+                         "name":  "SensorService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Sensor Monitoring Service",
+                         "name":  "SensrSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Serial UART Support Library",
+                         "name":  "SerCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Serial UART Support Library",
+                         "name":  "SerCx2",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Desktop Configuration",
+                         "name":  "SessionEnv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "System Guard Runtime Monitor Broker",
+                         "name":  "SgrmBroker",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Internet Connection Sharing (ICS)",
+                         "name":  "SharedAccess",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Spatial Data Service",
+                         "name":  "SharedRealitySvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Shell Hardware Detection",
+                         "name":  "ShellHWDetection",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "smbdirect",
+                         "name":  "smbdirect",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Storage Spaces SMP",
+                         "name":  "smphost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Windows SMS Router Service.",
+                         "name":  "SmsRouter",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "SNMP Trap",
+                         "name":  "SNMPTrap",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Space Parser",
+                         "name":  "spaceparser",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Holographic Spatial Graph Filter",
+                         "name":  "SpatialGraphFilter",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Simple Peripheral Bus Support Library",
+                         "name":  "SpbCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Perception Service",
+                         "name":  "spectrum",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Print Spooler",
+                         "name":  "Spooler",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Software Protection",
+                         "name":  "sppsvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Server SMB 2.xxx Driver",
+                         "name":  "srv2",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "srvnet",
+                         "name":  "srvnet",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "SSDP Discovery",
+                         "name":  "SSDPSRV",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Secure Socket Tunneling Protocol Service",
+                         "name":  "SstpSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "State Repository Service",
+                         "name":  "StateRepository",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Image Acquisition (WIA)",
+                         "name":  "StiSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Storage QoS Filter Driver",
+                         "name":  "storqosflt",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Storage Service",
+                         "name":  "StorSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Spot Verifier",
+                         "name":  "svsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Software Shadow Copy Provider",
+                         "name":  "swprv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "SysMain",
+                         "name":  "SysMain",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "System Events Broker",
+                         "name":  "SystemEventsBroker",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Telephony",
+                         "name":  "TapiSrv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "@todo.dll,-100;Microsoft IPv6 Protocol Driver",
+                         "name":  "Tcpip6",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "TCP/IP Registry Compatibility",
+                         "name":  "tcpipreg",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Remote Desktop Services",
+                         "name":  "TermService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "TextInputManagementService",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Themes",
+                         "name":  "Themes",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Storage Tiers Management",
+                         "name":  "TieringEngineService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Time Broker",
+                         "name":  "TimeBrokerSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Web Account Manager",
+                         "name":  "TokenBroker",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Distributed Link Tracking Client",
+                         "name":  "TrkWks",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Recommended Troubleshooting Service",
+                         "name":  "TroubleshootingSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Modules Installer",
+                         "name":  "TrustedInstaller",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Remote Desktop USB Hub Class Filter Driver",
+                         "name":  "TsUsbFlt",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Tunnel Miniport Adapter Driver",
+                         "name":  "tunnel",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "USB Connector Manager KMDF Class Extension",
+                         "name":  "UcmCx0101",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "UCM-TCPCI KMDF Class Extension",
+                         "name":  "UcmTcpciCx0101",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "UCM-UCSI KMDF Class Extension",
+                         "name":  "UcmUcsiCx0101",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "USB Host Support Library",
+                         "name":  "Ucx01000",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "USB Device Emulation Support Library",
+                         "name":  "UdeCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Udk User Service",
+                         "name":  "UdkUserSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "USB Function Class Extension",
+                         "name":  "Ufx01000",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Desktop Services UserMode Port Redirector",
+                         "name":  "UmRdpService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "User Data Storage",
+                         "name":  "UnistoreSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "UPnP Device Host",
+                         "name":  "upnphost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "USB Role-Switch Support Library",
+                         "name":  "UrsCx01000",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "User Data Access",
+                         "name":  "UserDataSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "User Manager",
+                         "name":  "UserManager",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Update Orchestrator Service",
+                         "name":  "UsoSvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Volumetric Audio Compositor Service",
+                         "name":  "VacSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Credential Manager",
+                         "name":  "VaultSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Virtual Disk",
+                         "name":  "vds",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Driver Verifier Extension",
+                         "name":  "VerifierExt",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Guest Service Interface",
+                         "name":  "vmicguestinterface",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Heartbeat Service",
+                         "name":  "vmicheartbeat",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Data Exchange Service",
+                         "name":  "vmickvpexchange",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Remote Desktop Virtualization Service",
+                         "name":  "vmicrdv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Guest Shutdown Service",
+                         "name":  "vmicshutdown",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Time Synchronization Service",
+                         "name":  "vmictimesync",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V PowerShell Direct Service",
+                         "name":  "vmicvmsession",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Hyper-V Volume Shadow Copy Requestor",
+                         "name":  "vmicvss",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Volume Shadow Copy",
+                         "name":  "VSS",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Time",
+                         "name":  "W32Time",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Update Medic Service",
+                         "name":  "WaaSMedicSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WalletService",
+                         "name":  "WalletService",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access IP ARP Driver",
+                         "name":  "wanarp",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Remote Access IPv6 ARP Driver",
+                         "name":  "wanarpv6",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WarpJITSvc",
+                         "name":  "WarpJITSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Block Level Backup Engine Service",
+                         "name":  "wbengine",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Biometric Service",
+                         "name":  "WbioSrvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Container Isolation",
+                         "name":  "wcifs",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Connection Manager",
+                         "name":  "Wcmsvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Connect Now - Config Registrar",
+                         "name":  "wcncsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Diagnostic Service Host",
+                         "name":  "WdiServiceHost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Diagnostic System Host",
+                         "name":  "WdiSystemHost",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WDI Driver Framework",
+                         "name":  "wdiwifi",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WdmCompanionFilter",
+                         "name":  "WdmCompanionFilter",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Defender Antivirus Network Inspection System Driver",
+                         "name":  "WdNisDrv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Defender Antivirus Network Inspection Service",
+                         "name":  "WdNisSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WebClient",
+                         "name":  "WebClient",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "webthreatdefsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "webthreatdefusersvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Event Collector",
+                         "name":  "Wecsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Encryption Provider Host Service",
+                         "name":  "WEPHOSTSVC",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Problem Reports Control Panel Support",
+                         "name":  "wercplsupport",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Error Reporting Service",
+                         "name":  "WerSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Wi-Fi Direct Services Connection Manager Service",
+                         "name":  "WFDSConMgrSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Still Image Acquisition Events",
+                         "name":  "WiaRpc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "",
+                         "name":  "WifiCx",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WIMMount",
+                         "name":  "WIMMount",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Defender Antivirus Service",
+                         "name":  "WinDefend",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "WinHTTP Web Proxy Auto-Discovery Service",
+                         "name":  "WinHttpAutoProxySvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Management Instrumentation",
+                         "name":  "Winmgmt",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows NAT Driver",
+                         "name":  "WinNat",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Remote Management (WS-Management)",
+                         "name":  "WinRM",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Insider Service",
+                         "name":  "wisvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WLAN AutoConfig",
+                         "name":  "WlanSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Microsoft Account Sign-in Assistant",
+                         "name":  "wlidsvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Local Profile Assistant Service",
+                         "name":  "wlpasvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Management Service",
+                         "name":  "WManSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WMI Performance Adapter",
+                         "name":  "wmiApSrv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Media Player Network Sharing Service",
+                         "name":  "WMPNetworkSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Work Folders",
+                         "name":  "workfolderssvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Parental Controls",
+                         "name":  "WpcMonSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Portable Device Enumerator Service",
+                         "name":  "WPDBusEnum",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WPD Upper Class Filter Driver",
+                         "name":  "WpdUpFltr",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Windows Push Notifications System Service",
+                         "name":  "WpnService",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Push Notifications User Service",
+                         "name":  "WpnUserService",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Security Center",
+                         "name":  "wscsvc",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Search",
+                         "name":  "WSearch",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "",
+                         "name":  "wtd",
+                         "startLabel":  "Automatic",
+                         "start":  2
+                     },
+                     {
+                         "description":  "Windows Update",
+                         "name":  "wuauserv",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "User Mode Driver Frameworks Platform Driver",
+                         "name":  "WudfPf",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "WWAN AutoConfig",
+                         "name":  "WwanSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Xbox Live Auth Manager",
+                         "name":  "XblAuthManager",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Xbox Live Game Save",
+                         "name":  "XblGameSave",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Xbox Accessory Management Service",
+                         "name":  "XboxGipSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     },
+                     {
+                         "description":  "Xbox Live Networking Service",
+                         "name":  "XboxNetApiSvc",
+                         "startLabel":  "Manual",
+                         "start":  3
+                     }
                  ]
 }

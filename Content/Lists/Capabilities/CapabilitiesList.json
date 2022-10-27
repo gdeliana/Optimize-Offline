@@ -1,5 +1,10 @@
-{
-	"Name": [
-
-	]
- }
+﻿{
+    "Name":  [
+                 "App.StepsRecorder~~~~0.0.1.0",
+                 "Hello.Face.20134~~~~0.0.1.0",
+                 "Language.Handwriting~~~en-US~0.0.1.0",
+                 "Language.OCR~~~en-US~0.0.1.0",
+                 "Language.Speech~~~en-US~0.0.1.0",
+                 "OneCoreUAP.OneSync~~~~0.0.1.0"
+             ]
+}

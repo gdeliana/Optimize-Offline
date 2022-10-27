@@ -1,3 +1,1163 @@
 ﻿[
-    
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "MediaPlayback",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "MicrosoftWindowsPowerShellV2",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "MicrosoftWindowsPowerShellV2Root",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "MSRDC-Infrastructure",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "NetFx4-AdvSrvs",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "Printing-Foundation-Features",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "Printing-Foundation-InternetPrinting-Client",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "Printing-PrintToPDFServices-Features",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "SearchEngine-Client-Package",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "SmbDirect",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "WCF-Services45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "WCF-TCP-PortSharing45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "Windows-Defender-Default-Definitions",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "WindowsMediaPlayer",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Enabled"
+    },
+    {
+        "OriginalState":  "Enabled",
+        "FeatureName":  "WorkFolders-Client",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "AppServerClient",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-DeviceLockdown",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-EmbeddedBootExp",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-EmbeddedLogon",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-EmbeddedShellLauncher",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "ClientForNFS-Infrastructure",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-KeyboardFilter",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-ProjFS",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Client-UnifiedWriteFilter",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Containers",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Containers-DisposableClientVM",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Containers-HNS",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Containers-SDN",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "DataCenterBridging",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "DirectoryServices-ADAM-Client",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "DirectPlay",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "HostGuardian",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "HypervisorPlatform",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ApplicationDevelopment",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ApplicationInit",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ASP",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ASPNET",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ASPNET45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-BasicAuthentication",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-CertProvider",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-CGI",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ClientCertificateMappingAuthentication",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-CommonHttpFeatures",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-CustomLogging",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-DefaultDocument",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-DigestAuthentication",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-DirectoryBrowsing",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-FTPExtensibility",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-FTPServer",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-FTPSvc",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HealthAndDiagnostics",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HostableWebCore",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HttpCompressionDynamic",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HttpCompressionStatic",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HttpErrors",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HttpLogging",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HttpRedirect",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-HttpTracing",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-IIS6ManagementCompatibility",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-IISCertificateMappingAuthentication",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-IPSecurity",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ISAPIExtensions",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ISAPIFilter",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-LegacyScripts",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-LegacySnapIn",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-LoggingLibraries",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ManagementConsole",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ManagementScriptingTools",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ManagementService",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-Metabase",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-NetFxExtensibility",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-NetFxExtensibility45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ODBCLogging",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-Performance",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-RequestFiltering",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-RequestMonitor",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-Security",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-ServerSideIncludes",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-StaticContent",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-URLAuthorization",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WebDAV",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WebServer",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WebServerManagementTools",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WebServerRole",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WebSockets",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WindowsAuthentication",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "IIS-WMICompatibility",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "LegacyComponents",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V-All",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V-Hypervisor",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V-Management-Clients",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V-Management-PowerShell",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V-Services",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Hyper-V-Tools-All",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Microsoft-Windows-Subsystem-Linux",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-ADIntegration",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-Container",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-DCOMProxy",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-HTTP",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-Multicast",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-Server",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MSMQ-Triggers",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MultiPoint-Connector",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MultiPoint-Connector-Services",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "MultiPoint-Tools",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "NetFx4Extended-ASPNET45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "NFS-Administration",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Printing-Foundation-LPDPrintService",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Printing-Foundation-LPRPortMonitor",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Printing-XPSServices-Features",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "ServicesForNFS-ClientOnly",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "SimpleTCP",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "TelnetClient",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "TFTP",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "TIFFIFilter",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "VirtualMachinePlatform",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WAS-ConfigurationAPI",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WAS-NetFxEnvironment",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WAS-ProcessModel",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WAS-WindowsActivationService",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WCF-HTTP-Activation",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WCF-HTTP-Activation45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WCF-MSMQ-Activation45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WCF-NonHTTP-Activation",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WCF-Pipe-Activation45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "WCF-TCP-Activation45",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Windows-Defender-ApplicationGuard",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    },
+    {
+        "OriginalState":  "Disabled",
+        "FeatureName":  "Windows-Identity-Foundation",
+        "States":  [
+                       "Enabled",
+                       "Disabled"
+                   ],
+        "State":  "Disabled"
+    }
 ]

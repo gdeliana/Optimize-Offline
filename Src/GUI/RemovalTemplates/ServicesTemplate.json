@@ -1,3 +1,4487 @@
-[
-  
+﻿[
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Agent Activation Runtime",
+        "Name":  "AarSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Acx01000",
+        "Name":  "Acx01000",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AllJoyn Router Service",
+        "Name":  "AJRouter",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Application Layer Gateway Service",
+        "Name":  "ALG",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AppID Driver",
+        "Name":  "AppID",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Application Identity",
+        "Name":  "AppIDSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Application Information",
+        "Name":  "Appinfo",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Smartlocker Filter Driver",
+        "Name":  "applockerfltr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Application Management",
+        "Name":  "AppMgmt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "App Readiness",
+        "Name":  "AppReadiness",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AppvStrm",
+        "Name":  "AppvStrm",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AppvVemgr",
+        "Name":  "AppvVemgr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AppvVfs",
+        "Name":  "AppvVfs",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AppX Deployment Service (AppXSVC)",
+        "Name":  "AppXSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AssignedAccessManager Service",
+        "Name":  "AssignedAccessManagerSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Audio Endpoint Builder",
+        "Name":  "AudioEndpointBuilder",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Audio",
+        "Name":  "Audiosrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Cellular Time",
+        "Name":  "autotimesvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "ActiveX Installer (AxInstSV)",
+        "Name":  "AxInstSV",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "GameDVR and Broadcast User Service",
+        "Name":  "BcastDVRUserService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "BitLocker Drive Encryption Service",
+        "Name":  "BDESVC",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Base Filtering Engine",
+        "Name":  "BFE",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "",
+        "Name":  "bfs",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Bind Filter Driver",
+        "Name":  "bindflt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Background Intelligent Transfer Service",
+        "Name":  "BITS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Bluetooth User Support Service",
+        "Name":  "BluetoothUserService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Browser",
+        "Name":  "bowser",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Background Tasks Infrastructure Service",
+        "Name":  "BrokerInfrastructure",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Bluetooth Audio Gateway Service",
+        "Name":  "BTAGService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "AVCTP service",
+        "Name":  "BthAvctpSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Bluetooth Support Service",
+        "Name":  "bthserv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Capability Access Manager Service",
+        "Name":  "camsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "CaptureService",
+        "Name":  "CaptureService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Clipboard User Service",
+        "Name":  "cbdhsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Connected Devices Platform Service",
+        "Name":  "CDPSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Connected Devices Platform User Service",
+        "Name":  "CDPUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Certificate Propagation",
+        "Name":  "CertPropSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Cloud Files Filter Driver",
+        "Name":  "CldFlt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Client License Service (ClipSVC)",
+        "Name":  "ClipSVC",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Cloud Identity Service",
+        "Name":  "cloudidsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "COM+ System Application",
+        "Name":  "COMSysApp",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Console Driver",
+        "Name":  "condrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "ConsentUX",
+        "Name":  "ConsentUxUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "CoreMessaging",
+        "Name":  "CoreMessagingRegistrar",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "CredentialEnrollmentManagerUserSvc",
+        "Name":  "CredentialEnrollmentManagerUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Cryptographic Services",
+        "Name":  "CryptSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Offline Files",
+        "Name":  "CscService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "DCOM Server Process Launcher",
+        "Name":  "DcomLaunch",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "dcsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Optimize drives",
+        "Name":  "defragsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "DeviceAssociationBroker",
+        "Name":  "DeviceAssociationBrokerSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Device Association Service",
+        "Name":  "DeviceAssociationService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Device Install Service",
+        "Name":  "DeviceInstall",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "DevicePicker",
+        "Name":  "DevicePickerUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "DevicesFlow",
+        "Name":  "DevicesFlowUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "DevQuery Background Discovery Broker",
+        "Name":  "DevQueryBroker",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "DHCP Client",
+        "Name":  "Dhcp",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft (R) Diagnostics Hub Standard Collector Service",
+        "Name":  "diagnosticshub.standardcollector.service",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Diagnostic Execution Service",
+        "Name":  "diagsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Connected User Experiences and Telemetry",
+        "Name":  "DiagTrack",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Display Policy Service",
+        "Name":  "DispBrokerDesktopSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Display Enhancement Service",
+        "Name":  "DisplayEnhancementService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Device Management Enrollment Service",
+        "Name":  "DmEnrollmentSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Device Management Wireless Application Protocol (WAP) Push message Routing Service",
+        "Name":  "dmwappushservice",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "DNS Client",
+        "Name":  "Dnscache",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Delivery Optimization",
+        "Name":  "DoSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Wired AutoConfig",
+        "Name":  "dot3svc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Diagnostic Policy Service",
+        "Name":  "DPS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Device Setup Manager",
+        "Name":  "DsmSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Data Sharing Service",
+        "Name":  "DsSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Data Usage",
+        "Name":  "DusmSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Extensible Authentication Protocol",
+        "Name":  "EapHost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Microsoft Edge Update Service (edgeupdate)",
+        "Name":  "edgeupdate",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Edge Update Service (edgeupdatem)",
+        "Name":  "edgeupdatem",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Encrypting File System (EFS)",
+        "Name":  "EFS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Embedded Mode",
+        "Name":  "embeddedmode",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Enterprise App Management Service",
+        "Name":  "EntAppSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Event Log",
+        "Name":  "EventLog",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "COM+ Event System",
+        "Name":  "EventSystem",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "ExecutionContext",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "exFAT File System Driver",
+        "Name":  "exfat",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "FAT12/16/32 File System Driver",
+        "Name":  "fastfat",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Function Discovery Provider Host",
+        "Name":  "fdPHost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Function Discovery Resource Publication",
+        "Name":  "FDResPub",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "File History Service",
+        "Name":  "fhsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Filetrace",
+        "Name":  "Filetrace",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Font Cache Service",
+        "Name":  "FontCache",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Camera Frame Server",
+        "Name":  "FrameServer",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "FrameServerMonitor",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "File System Dependency Minifilter",
+        "Name":  "FsDepends",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft GPIO Class Extension Driver",
+        "Name":  "GPIOClx0101",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Group Policy Client",
+        "Name":  "gpsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "GraphicsPerfSvc",
+        "Name":  "GraphicsPerfSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Human Interface Device Service",
+        "Name":  "hidserv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "HidSpiCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "HTTP Service",
+        "Name":  "HTTP",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "HV Host Service",
+        "Name":  "HvHost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Hardware Notifications Class Extension Driver",
+        "Name":  "HwNClx0101",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Mobile Hotspot Service",
+        "Name":  "icssvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "IKE and AuthIP IPsec Keying Modules",
+        "Name":  "IKEEXT",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Indirect Displays Kernel-Mode Driver",
+        "Name":  "IndirectKmd",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Store Install Service",
+        "Name":  "InstallService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "InventorySvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "IP Traffic Filter Driver",
+        "Name":  "IpFilterDriver",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "IP Helper",
+        "Name":  "iphlpsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "IP Network Address Translator",
+        "Name":  "IPNAT",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "IPT",
+        "Name":  "IPT",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "IP Translation Configuration Service",
+        "Name":  "IpxlatCfgSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "kbldfltr",
+        "Name":  "kbldfltr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "CNG Key Isolation",
+        "Name":  "KeyIso",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Kernel Streaming Thunks",
+        "Name":  "ksthunk",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "KtmRm for Distributed Transaction Coordinator",
+        "Name":  "KtmRm",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Server",
+        "Name":  "LanmanServer",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Workstation",
+        "Name":  "LanmanWorkstation",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Geolocation Service",
+        "Name":  "lfsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows License Manager Service",
+        "Name":  "LicenseManager",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Link-Layer Topology Discovery Mapper I/O Driver",
+        "Name":  "lltdio",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Link-Layer Topology Discovery Mapper",
+        "Name":  "lltdsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "TCP/IP NetBIOS Helper",
+        "Name":  "lmhosts",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Local Session Manager",
+        "Name":  "LSM",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "UAC File Virtualization",
+        "Name":  "luafv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Language Experience Service",
+        "Name":  "LxpSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Downloaded Maps Manager",
+        "Name":  "MapsBroker",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "MBB Network Adapter Class Extension",
+        "Name":  "MbbCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "McpManagementService",
+        "Name":  "McpManagementService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "MessagingService",
+        "Name":  "MessagingService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Mixed Reality OpenXR Service",
+        "Name":  "MixedRealityOpenXRSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Multimedia Class Scheduler",
+        "Name":  "MMCSS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Modem",
+        "Name":  "Modem",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Defender Firewall Authorization Driver",
+        "Name":  "mpsdrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Defender Firewall",
+        "Name":  "mpssvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WebDav Client Redirector Driver",
+        "Name":  "MRxDAV",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "SMB MiniRedirector Wrapper and Engine",
+        "Name":  "mrxsmb",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "SMB 2.0 MiniRedirector",
+        "Name":  "mrxsmb20",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft MAC Bridge",
+        "Name":  "MsBridge",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Distributed Transaction Coordinator",
+        "Name":  "MSDTC",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft iSCSI Initiator Service",
+        "Name":  "MSiSCSI",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Installer",
+        "Name":  "msiserver",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Microsoft Link-Layer Discovery Protocol",
+        "Name":  "MsLldp",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "MsQuic",
+        "Name":  "MsQuic",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "MsRPC",
+        "Name":  "MsRPC",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "NativeWiFi Filter",
+        "Name":  "NativeWifiP",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Natural Authentication",
+        "Name":  "NaturalAuthentication",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network Connectivity Assistant",
+        "Name":  "NcaSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network Connection Broker",
+        "Name":  "NcbService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network Connected Devices Auto-Setup",
+        "Name":  "NcdAutoSetup",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Network Adapter Multiplexor Protocol",
+        "Name":  "NdisImPlatform",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access NDIS TAPI Driver",
+        "Name":  "NdisTapi",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "NDIS Usermode I/O Protocol",
+        "Name":  "Ndisuio",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access LEGACY NDIS WAN Driver",
+        "Name":  "ndiswanlegacy",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "NDKPerf",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "NDKPing Driver",
+        "Name":  "NDKPing",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "NDIS Proxy Driver",
+        "Name":  "ndproxy",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Network Data Usage Monitoring Driver",
+        "Name":  "Ndu",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network Adapter Wdf Class Extension Library",
+        "Name":  "NetAdapterCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Netlogon",
+        "Name":  "Netlogon",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network Connections",
+        "Name":  "Netman",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network List Service",
+        "Name":  "netprofm",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Network Setup Service",
+        "Name":  "NetSetupSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Passport Container",
+        "Name":  "NgcCtnrSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Passport",
+        "Name":  "NgcSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Network Location Awareness",
+        "Name":  "NlaSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "NPSMSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Network Store Interface Service",
+        "Name":  "nsi",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Ntfs",
+        "Name":  "Ntfs",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "",
+        "Name":  "OneSyncSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Peer Networking Identity Manager",
+        "Name":  "p2pimsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Peer Networking Grouping",
+        "Name":  "p2psvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "P9Rdr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "P9RdrService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Program Compatibility Assistant Service",
+        "Name":  "PcaSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "PEAUTH",
+        "Name":  "PEAUTH",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "BranchCache",
+        "Name":  "PeerDistSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "PenService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Perception Simulation Service",
+        "Name":  "perceptionsimulation",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Performance Counter DLL Host",
+        "Name":  "PerfHost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Phone Service",
+        "Name":  "PhoneSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Contact Data",
+        "Name":  "PimIndexMaintenanceSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Packet Monitor Driver",
+        "Name":  "PktMon",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Performance Logs \u0026 Alerts",
+        "Name":  "pla",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Plug and Play",
+        "Name":  "PlugPlay",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "PNRP Machine Name Publication Service",
+        "Name":  "PNRPAutoReg",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Peer Name Resolution Protocol",
+        "Name":  "PNRPsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "IPsec Policy Agent",
+        "Name":  "PolicyAgent",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "portcfg",
+        "Name":  "portcfg",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Power",
+        "Name":  "Power",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "PrintWorkflow",
+        "Name":  "PrintWorkflowUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "User Profile Service",
+        "Name":  "ProfSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows PushToInstall Service",
+        "Name":  "PushToInstall",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Quality Windows Audio Video Experience",
+        "Name":  "QWAVE",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "QWAVE driver",
+        "Name":  "QWAVEdrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access Auto Connection Driver",
+        "Name":  "RasAcd",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access Auto Connection Manager",
+        "Name":  "RasAuto",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access Connection Manager",
+        "Name":  "RasMan",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Desktop Device Redirector Driver",
+        "Name":  "RDPDR",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Desktop Video Miniport Driver",
+        "Name":  "RdpVideoMiniport",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "ReFS",
+        "Name":  "ReFS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "ReFSv1",
+        "Name":  "ReFSv1",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Retail Demo Service",
+        "Name":  "RetailDemo",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Radio Management Service",
+        "Name":  "RmSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "RPC Endpoint Mapper",
+        "Name":  "RpcEptMapper",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Procedure Call (RPC) Locator",
+        "Name":  "RpcLocator",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Remote Procedure Call (RPC)",
+        "Name":  "RpcSs",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Link-Layer Topology Discovery Responder",
+        "Name":  "rspndr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Security Accounts Manager",
+        "Name":  "SamSs",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Smart Card",
+        "Name":  "SCardSvr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Smart Card Device Enumeration Service",
+        "Name":  "ScDeviceEnum",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Smart card PnP Class Filter Driver",
+        "Name":  "scfilter",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Task Scheduler",
+        "Name":  "Schedule",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Smart Card Removal Policy",
+        "Name":  "SCPolicySvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Backup",
+        "Name":  "SDRSVC",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Secondary Logon",
+        "Name":  "seclogon",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Security Service",
+        "Name":  "SecurityHealthService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Payments and NFC/SE Manager",
+        "Name":  "SEMgrSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "System Event Notification Service",
+        "Name":  "SENS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Defender Advanced Threat Protection Service",
+        "Name":  "Sense",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Sensor Data Service",
+        "Name":  "SensorDataService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Sensor Service",
+        "Name":  "SensorService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Sensor Monitoring Service",
+        "Name":  "SensrSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Serial UART Support Library",
+        "Name":  "SerCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Serial UART Support Library",
+        "Name":  "SerCx2",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Desktop Configuration",
+        "Name":  "SessionEnv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "System Guard Runtime Monitor Broker",
+        "Name":  "SgrmBroker",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Internet Connection Sharing (ICS)",
+        "Name":  "SharedAccess",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Spatial Data Service",
+        "Name":  "SharedRealitySvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Shell Hardware Detection",
+        "Name":  "ShellHWDetection",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "smbdirect",
+        "Name":  "smbdirect",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Storage Spaces SMP",
+        "Name":  "smphost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Windows SMS Router Service.",
+        "Name":  "SmsRouter",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "SNMP Trap",
+        "Name":  "SNMPTrap",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Space Parser",
+        "Name":  "spaceparser",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Holographic Spatial Graph Filter",
+        "Name":  "SpatialGraphFilter",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Simple Peripheral Bus Support Library",
+        "Name":  "SpbCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Perception Service",
+        "Name":  "spectrum",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Print Spooler",
+        "Name":  "Spooler",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Software Protection",
+        "Name":  "sppsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Server SMB 2.xxx Driver",
+        "Name":  "srv2",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "srvnet",
+        "Name":  "srvnet",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "SSDP Discovery",
+        "Name":  "SSDPSRV",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Secure Socket Tunneling Protocol Service",
+        "Name":  "SstpSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "State Repository Service",
+        "Name":  "StateRepository",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Image Acquisition (WIA)",
+        "Name":  "StiSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Storage QoS Filter Driver",
+        "Name":  "storqosflt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Storage Service",
+        "Name":  "StorSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Spot Verifier",
+        "Name":  "svsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Software Shadow Copy Provider",
+        "Name":  "swprv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "SysMain",
+        "Name":  "SysMain",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "System Events Broker",
+        "Name":  "SystemEventsBroker",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Telephony",
+        "Name":  "TapiSrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "@todo.dll,-100;Microsoft IPv6 Protocol Driver",
+        "Name":  "Tcpip6",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "TCP/IP Registry Compatibility",
+        "Name":  "tcpipreg",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Desktop Services",
+        "Name":  "TermService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "",
+        "Name":  "TextInputManagementService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Themes",
+        "Name":  "Themes",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Storage Tiers Management",
+        "Name":  "TieringEngineService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Time Broker",
+        "Name":  "TimeBrokerSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Web Account Manager",
+        "Name":  "TokenBroker",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Distributed Link Tracking Client",
+        "Name":  "TrkWks",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Recommended Troubleshooting Service",
+        "Name":  "TroubleshootingSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Modules Installer",
+        "Name":  "TrustedInstaller",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Desktop USB Hub Class Filter Driver",
+        "Name":  "TsUsbFlt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Tunnel Miniport Adapter Driver",
+        "Name":  "tunnel",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "USB Connector Manager KMDF Class Extension",
+        "Name":  "UcmCx0101",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "UCM-TCPCI KMDF Class Extension",
+        "Name":  "UcmTcpciCx0101",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "UCM-UCSI KMDF Class Extension",
+        "Name":  "UcmUcsiCx0101",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "USB Host Support Library",
+        "Name":  "Ucx01000",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "USB Device Emulation Support Library",
+        "Name":  "UdeCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Udk User Service",
+        "Name":  "UdkUserSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "USB Function Class Extension",
+        "Name":  "Ufx01000",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Desktop Services UserMode Port Redirector",
+        "Name":  "UmRdpService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "User Data Storage",
+        "Name":  "UnistoreSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "UPnP Device Host",
+        "Name":  "upnphost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "USB Role-Switch Support Library",
+        "Name":  "UrsCx01000",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "User Data Access",
+        "Name":  "UserDataSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "User Manager",
+        "Name":  "UserManager",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Update Orchestrator Service",
+        "Name":  "UsoSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Volumetric Audio Compositor Service",
+        "Name":  "VacSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Credential Manager",
+        "Name":  "VaultSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Virtual Disk",
+        "Name":  "vds",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Driver Verifier Extension",
+        "Name":  "VerifierExt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Guest Service Interface",
+        "Name":  "vmicguestinterface",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Heartbeat Service",
+        "Name":  "vmicheartbeat",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Data Exchange Service",
+        "Name":  "vmickvpexchange",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Remote Desktop Virtualization Service",
+        "Name":  "vmicrdv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Guest Shutdown Service",
+        "Name":  "vmicshutdown",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Time Synchronization Service",
+        "Name":  "vmictimesync",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V PowerShell Direct Service",
+        "Name":  "vmicvmsession",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Hyper-V Volume Shadow Copy Requestor",
+        "Name":  "vmicvss",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Volume Shadow Copy",
+        "Name":  "VSS",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Time",
+        "Name":  "W32Time",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Update Medic Service",
+        "Name":  "WaaSMedicSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WalletService",
+        "Name":  "WalletService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access IP ARP Driver",
+        "Name":  "wanarp",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Remote Access IPv6 ARP Driver",
+        "Name":  "wanarpv6",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WarpJITSvc",
+        "Name":  "WarpJITSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Block Level Backup Engine Service",
+        "Name":  "wbengine",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Biometric Service",
+        "Name":  "WbioSrvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Container Isolation",
+        "Name":  "wcifs",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Connection Manager",
+        "Name":  "Wcmsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Connect Now - Config Registrar",
+        "Name":  "wcncsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Diagnostic Service Host",
+        "Name":  "WdiServiceHost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Diagnostic System Host",
+        "Name":  "WdiSystemHost",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WDI Driver Framework",
+        "Name":  "wdiwifi",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WdmCompanionFilter",
+        "Name":  "WdmCompanionFilter",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Defender Antivirus Network Inspection System Driver",
+        "Name":  "WdNisDrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Defender Antivirus Network Inspection Service",
+        "Name":  "WdNisSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WebClient",
+        "Name":  "WebClient",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "webthreatdefsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "",
+        "Name":  "webthreatdefusersvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Event Collector",
+        "Name":  "Wecsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Encryption Provider Host Service",
+        "Name":  "WEPHOSTSVC",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Problem Reports Control Panel Support",
+        "Name":  "wercplsupport",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Error Reporting Service",
+        "Name":  "WerSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Wi-Fi Direct Services Connection Manager Service",
+        "Name":  "WFDSConMgrSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Still Image Acquisition Events",
+        "Name":  "WiaRpc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "",
+        "Name":  "WifiCx",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WIMMount",
+        "Name":  "WIMMount",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Microsoft Defender Antivirus Service",
+        "Name":  "WinDefend",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WinHTTP Web Proxy Auto-Discovery Service",
+        "Name":  "WinHttpAutoProxySvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Management Instrumentation",
+        "Name":  "Winmgmt",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows NAT Driver",
+        "Name":  "WinNat",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Remote Management (WS-Management)",
+        "Name":  "WinRM",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Insider Service",
+        "Name":  "wisvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WLAN AutoConfig",
+        "Name":  "WlanSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Microsoft Account Sign-in Assistant",
+        "Name":  "wlidsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Local Profile Assistant Service",
+        "Name":  "wlpasvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Management Service",
+        "Name":  "WManSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WMI Performance Adapter",
+        "Name":  "wmiApSrv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Media Player Network Sharing Service",
+        "Name":  "WMPNetworkSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Work Folders",
+        "Name":  "workfolderssvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Parental Controls",
+        "Name":  "WpcMonSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Portable Device Enumerator Service",
+        "Name":  "WPDBusEnum",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WPD Upper Class Filter Driver",
+        "Name":  "WpdUpFltr",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Push Notifications System Service",
+        "Name":  "WpnService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Push Notifications User Service",
+        "Name":  "WpnUserService",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Security Center",
+        "Name":  "wscsvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "Windows Search",
+        "Name":  "WSearch",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Automatic",
+        "Description":  "",
+        "Name":  "wtd",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Automatic"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Windows Update",
+        "Name":  "wuauserv",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Disabled"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "User Mode Driver Frameworks Platform Driver",
+        "Name":  "WudfPf",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "WWAN AutoConfig",
+        "Name":  "WwanSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Xbox Live Auth Manager",
+        "Name":  "XblAuthManager",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Xbox Live Game Save",
+        "Name":  "XblGameSave",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Xbox Accessory Management Service",
+        "Name":  "XboxGipSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    },
+    {
+        "OriginalStart":  "Manual",
+        "Description":  "Xbox Live Networking Service",
+        "Name":  "XboxNetApiSvc",
+        "Starts":  [
+                       "Boot",
+                       "System",
+                       "Automatic",
+                       "Manual",
+                       "Disabled"
+                   ],
+        "Start":  "Manual"
+    }
 ]

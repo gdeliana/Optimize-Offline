@@ -1,3 +1,162 @@
 ﻿[
-    
+    {
+        "DisplayName":  "Microsoft.AAD.BrokerPlugin",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.AccountsControl",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.AsyncTextService",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.BioEnrollment",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.CredDialogHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.ECApp",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.LockApp",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.MicrosoftEdge",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.MicrosoftEdgeDevToolsClient",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.UI.Xaml.CBS",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Win32WebViewHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AddSuggestedFoldersToLibarayDialog",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AppRep.ChxApp",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AppResolverUX",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.AssignedAccessLockApp",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.CallingShellApp",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.CapturePicker",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.CloudExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.ContentDeliveryManager",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.FileExplorer",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.FilePicker",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.NarratorQuickStart",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.OOBENetworkCaptivePortal",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.OOBENetworkConnectionFlow",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.ParentalControls",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.PeopleExperienceHost",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.PinningConfirmationDialog",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.PrintQueueActionCenter",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.SecureAssessmentBrowser",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.ShellExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.StartMenuExperienceHost",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Microsoft.Windows.XGpuEjectDialog",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "Microsoft.XboxGameCallableUI",
+        "Selected":  true
+    },
+    {
+        "DisplayName":  "MicrosoftWindows.Client.CBS",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "MicrosoftWindows.Client.Core",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "MicrosoftWindows.UndockedDevKit",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "NcsiUwpApp",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Windows.CBSPreview",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "windows.immersivecontrolpanel",
+        "Selected":  false
+    },
+    {
+        "DisplayName":  "Windows.PrintDialog",
+        "Selected":  false
+    }
 ]

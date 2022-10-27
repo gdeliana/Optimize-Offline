@@ -1,5 +1,23 @@
-{
-	"DisplayName":  [
-
-						 ]
+﻿{
+    "DisplayName":  [
+                        "Microsoft.AsyncTextService",
+                        "Microsoft.BioEnrollment",
+                        "Microsoft.ECApp",
+                        "Microsoft.LockApp",
+                        "Microsoft.Windows.AddSuggestedFoldersToLibarayDialog",
+                        "Microsoft.Windows.AppRep.ChxApp",
+                        "Microsoft.Windows.AppResolverUX",
+                        "Microsoft.Windows.AssignedAccessLockApp",
+                        "Microsoft.Windows.CallingShellApp",
+                        "Microsoft.Windows.CapturePicker",
+                        "Microsoft.Windows.ContentDeliveryManager",
+                        "Microsoft.Windows.NarratorQuickStart",
+                        "Microsoft.Windows.ParentalControls",
+                        "Microsoft.Windows.PeopleExperienceHost",
+                        "Microsoft.Windows.PinningConfirmationDialog",
+                        "Microsoft.Windows.PrintQueueActionCenter",
+                        "Microsoft.Windows.SecureAssessmentBrowser",
+                        "Microsoft.Windows.XGpuEjectDialog",
+                        "Microsoft.XboxGameCallableUI"
+                    ]
 }

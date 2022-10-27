@@ -1,3 +1,62 @@
 ﻿[
-    
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.NET.Native.Framework.1.3_1.3.24211.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.NET.Native.Framework.1.3"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.NET.Native.Framework.1.7_1.7.27413.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.NET.Native.Framework.1.7"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.NET.Native.Framework.2.2_2.2.29512.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.NET.Native.Framework.2.2"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.NET.Native.Runtime.1.4_1.4.24201.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.NET.Native.Runtime.1.4"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.NET.Native.Runtime.1.7_1.7.25531.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.NET.Native.Runtime.1.7"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.NET.Native.Runtime.2.2_2.2.28604.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.NET.Native.Runtime.2.2"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.UI.Xaml.2.1_2.11906.6001.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.UI.Xaml.2.1"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.UI.Xaml.2.3_2.32002.13001.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.UI.Xaml.2.3"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.UI.Xaml.2.4_2.42007.9001.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.UI.Xaml.2.4"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.UI.Xaml.2.7_7.2203.17001.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.UI.Xaml.2.7"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.VCLibs.140.00_14.0.30704.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.VCLibs.140.00"
+    },
+    {
+        "Selected":  false,
+        "PackageName":  "Microsoft.VCLibs.140.00.UWPDesktop_14.0.30704.0_x64__8wekyb3d8bbwe",
+        "DisplayName":  "Microsoft.VCLibs.140.00.UWPDesktop"
+    }
 ]
