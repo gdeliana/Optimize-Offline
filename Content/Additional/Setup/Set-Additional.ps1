@@ -118,7 +118,7 @@ Function Set-Additional
         }
 
         # Disable Clipboard history, its synchronization service and any Remote Desktop redirection.
-        If ($Build -ge 17763)
+        If ($Build -lt 19041)
         {
             If (!(Test-Path -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System")) { New-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -ItemType Directory -Force | Out-Null }
             Set-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System" -Name AllowCrossDeviceClipboard -Value 0 -Force
@@ -147,11 +147,6 @@ Function Set-Additional
             Invoke-Expression -Command ('FSUTIL BEHAVIOR SET DISABLEDELETENOTIFY NTFS 0') | Out-Null
             $QueryReFS = Invoke-Expression -Command ('FSUTIL BEHAVIOR QUERY DISABLEDELETENOTIFY') | Select-String -Pattern ReFS
             If ($QueryReFS) { Invoke-Expression -Command ('FSUTIL BEHAVIOR SET DISABLEDELETENOTIFY REFS 0') | Out-Null }
-
-            # Disable Swapfile.sys which can improve SSD performance.
-            If(!(Get-AppxProvisionedPackage -Online | Where-Object -Property DisplayName -EQ Microsoft.WindowsStore)){
-                Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management" -Name SwapfileControl -Value 0 -Force
-            }
 
             # Disable Prefetch and Superfetch (optimal for SSD drives).
             If (!(Test-Path -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters")) { New-Item -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters" -ItemType Directory -Force | Out-Null }
@@ -224,6 +219,19 @@ Function Set-Additional
         $ErrorActionPreference = $DefaultErrorActionPreference
         $ProgressPreference = $DefaultProgressPreference
     }
+}
+
+# Ensure we are running with administrative permissions.
+If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+	$arguments = @(" Set-ExecutionPolicy Bypass -Scope Process -Force; & '" + $MyInvocation.MyCommand.Definition + "'")
+	foreach ($param in $PSBoundParameters.GetEnumerator()) {
+		$arguments += "-"+[string]$param.Key+$(If ($param.Value -notin @("True", "False")) {"="+$param.Value} Else {""})
+	}
+	If(!$noPause){
+		$arguments += " ; pause"
+	}
+	Start-Process powershell -Verb RunAs -ArgumentList $arguments
+	Stop-Process -Id $PID
 }
 
 If (([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator))

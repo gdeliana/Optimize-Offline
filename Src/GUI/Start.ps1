@@ -39,8 +39,8 @@ Function CleanVars {
 	Foreach($ListType in $ListTypes) {
 		Remove-Variable -Name "$($ListType)Template" -ErrorAction Ignore -Scope Global
 	}
-	If (Test-Path -Path $ConsoleSTDOutPath) {
-		Remove-Item -Path $ConsoleSTDOutPath
+	If (Test-Path -Path "$ConsoleSTDOutPath") {
+		Remove-Item -Path "$ConsoleSTDOutPath"
 	}
 }
 
@@ -407,6 +407,7 @@ If (!$Window) {
 
 $Window.Add_Closing({
 	CleanVars
+	Stop-Process $Global:OO_GUI_Job
 })
 
 $Window.Icon = "$RootPath\setup.ico"
@@ -506,19 +507,14 @@ Function RunOO {
 		Save-Configuration
 		$OutputTab.IsSelected = $true
 		SetControlsAccess -Enabled $false
-		If($(Get-ExecutionPolicy) -ne "Unrestricted" -and [System.Windows.MessageBox]::Show('Set execution policy to Unrestricted?','Powershell Execution Policy','YesNoCancel','Info') -eq "Yes"){
-			Start-Process powershell -WindowStyle Hidden -argument "Set-ExecutionPolicy Unrestricted" -Verb RunAs
-		} Else {
-			Throw "Execution policy prevents scripts to run in the system"
-		}
-		$Global:OO_GUI_Job = Start-Process powershell -WindowStyle Hidden -argument "$($OO_Root_Path)Start-Optimize.ps1 -noPause -FlashUSBDriveNumber $Global:OO_GUI_FlashUSBDriveNumber $(If($populateTemplates) {"-populateTemplates"} Else {''}) *>> $($ConsoleSTDOutPath)" -Verb RunAs -PassThru
+		$Global:OO_GUI_Job = Start-Process powershell -WindowStyle Hidden -argument "Set-ExecutionPolicy Bypass -Scope Process -Force; & '$($OO_Root_Path)Start-Optimize.ps1' -noPause -FlashUSBDriveNumber $Global:OO_GUI_FlashUSBDriveNumber $(If($populateTemplates) {"-populateTemplates"} Else {''}) *>> '$($ConsoleSTDOutPath)'" -Verb RunAs -PassThru
 		$Global:OO_GUI_Timer.Start()
 	} Catch {
 		SetError -Err $Error[0]
 		SetControlsAccess -Enabled $true
 		$Global:OO_GUI_Timer.Stop()
-		If(Test-Path -path $ConsoleSTDOutPath){
-			Remove-Item -Path $ConsoleSTDOutPath
+		If(Test-Path -path "$ConsoleSTDOutPath"){
+			Remove-Item -Path "$ConsoleSTDOutPath"
 		}
 	}
 }
@@ -645,15 +641,15 @@ Foreach($ListType in $ListTypes) {
 }
 
 $TimerTick = {
-	If(Test-Path -Path $ConsoleSTDOutPath){
-		WriteToConsole -Text (Get-Content -Path $ConsoleSTDOutPath -Raw -Encoding utf8)
+	If(Test-Path -Path "$ConsoleSTDOutPath"){
+		WriteToConsole -Text (Get-Content -Path "$ConsoleSTDOutPath" -Raw -Encoding utf8)
 		[Windows.Input.InputEventHandler]{ $Window.UpdateLayout() }
 	}
 	If($null -ne $Global:OO_GUI_Job.ExitCode){
 		$Global:OO_GUI_Timer.Stop()
 		SetControlsAccess -Enabled $true
-		If(Test-Path -Path $ConsoleSTDOutPath){
-			Remove-Item -Path $ConsoleSTDOutPath
+		If(Test-Path -Path "$ConsoleSTDOutPath"){
+			Remove-Item -Path "$ConsoleSTDOutPath"
 		}
 		Import-Templates
 		foreach($ListType in $ListTypes) {

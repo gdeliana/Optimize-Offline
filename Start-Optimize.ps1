@@ -25,7 +25,7 @@ $Global:Error.Clear()
 
 # Ensure we are running with administrative permissions.
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-	$arguments = @(" & '" + $MyInvocation.MyCommand.Definition + "'")
+	$arguments = @(" Set-ExecutionPolicy Bypass -Scope Process -Force; & '" + $MyInvocation.MyCommand.Definition + "'")
 	foreach ($param in $PSBoundParameters.GetEnumerator()) {
 		$arguments += "-"+[string]$param.Key+$(If ($param.Value -notin @("True", "False")) {"="+$param.Value} Else {""})
 	}
@@ -115,5 +115,17 @@ Else {
 		Exit
 	}
 }
-
-Optimize-Offline @ConfigParams
+Try{
+	Optimize-Offline @ConfigParams
+} Catch {
+	$formatstring = "{0} : {1}`n{2}`n" +
+                "    + CategoryInfo          : {3}`n" +
+                "    + FullyQualifiedErrorId : {4}`n"
+	$fields = $_.InvocationInfo.MyCommand.Name,
+          $_.ErrorDetails.Message,
+          $_.InvocationInfo.PositionMessage,
+          $_.CategoryInfo.ToString(),
+          $_.FullyQualifiedErrorId
+	Write-Host -Foreground Red ($formatstring -f $fields)
+	Exit
+}
