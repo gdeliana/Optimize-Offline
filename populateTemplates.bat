@@ -1,1 +1,1 @@
-powershell "%~dp0Start-Optimize -populateTemplates"
+powershell -ExecutionPolicy Bypass -File "%~dp0Start-Optimize.ps1" "-populateTemplates"

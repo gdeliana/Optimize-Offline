@@ -61,6 +61,8 @@ The following System Applications are safe to remove:
 
 Cortana can also be removed, though doing so will render the default search feature inoperable and is only recommended if a 3rd party search program like Classic Shell will be used.
 
+AppResolverUX is a UWP app that not only issues the pop-up asking how to open a specific file that does not have its own dedicated app association, but also allows for the installation of DHC drivers. It is advised not to remove this System Application as doing so will prevent all Store, UWP/DHC driver apps from running and also prevent them from being manually installed.
+
 **Some System Applications are required during the OOBE setup pass and their removal can cause setup to fail. Do not remove any System Application if you're unsure of its impact on a live system.**
 
 ### About Windows Capabilities and Packages ###
@@ -104,12 +106,7 @@ Content can be in the form of files, folders or directories, unless a specific f
 
 #### Registry Template Integration ####
 
-Custom registry template (.reg) files placed in the '\Content\Additional\RegistryTemplates' folder are imported by Optimize-Offline into the offline image's appropriate registry hive. 
-
-***Note:***
-To qualify for Optimize-Offline hive import, all custom registry template additions are constrained to having unrestricted permissions. If any key change included in a custom registry template addition requires restricted access, the entire Optimize-Offline script fails without notice and without any descriptive warning. The solution is to remove any registry key change that requires access to protected registry keys.
-
->Registry templates that users can add to be automatically imported into the offline registry hives are not granted the token privileges required for access to protected registry keys. Only certain values applied by the script itself are granted these privileges. [GitHub-DrEmpiricism](https://github.com/DrEmpiricism/Optimize-Offline/issues/136#issuecomment-554158335)
+Any custom registry template (.reg) file to be imported into the offline image's registry hives can be placed in the '\Content\Additional\RegistryTemplates' folder. No editing of these template files is required and Optimize-Offline will copy and edit them accordingly to apply them to the appropriate hives.
 
 #### Adding Drivers ####
 
@@ -139,28 +136,28 @@ It is also recommended to be well versed and aware of all recovery tools Microso
 
 Starting in Windows 8.1, Microsoft introduced a Metro-style calculator to replace its traditional Calculator.  In Windows 10 non-LTSB/LTSC/Server editions, the traditional Calculator was entirely removed and replaced with a UWP (Universal Windows Platform) App version.  This new UWP Calculator introduced a fairly bloated UI many users were simply not fond of and much preferred the simplicity of the traditional Calculator (now labeled Win32Calc.exe).  Unfortunately, Microsoft never added the ability to revert back to the traditional Calculator nor released a downloadable package to install the traditional Calculator.
 
-### About Microsoft Defender ###
-	
->Microsoft Defender is the built-in antimalware and antivirus protection component of Microsoft Windows. [Microsoft Document](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide). Natively, unless replaced by another antivirus, the Defender application always starts with Windows. Optimize-Offline provides methods to regain control over the initial activation and ongoing operation of Microsoft Defender.
+### About Microsoft Defender
+
+> Microsoft Defender is the built-in antimalware and antivirus protection component of Microsoft Windows. [Microsoft Document](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows?view=o365-worldwide). Natively, unless replaced by another antivirus, the Defender application always starts with Windows. Optimize-Offline provides methods to regain control over the initial activation and ongoing operation of Microsoft Defender.
 
 ***Optimize-Offline supplies two methods to control Microsoft Defender***
 
-- The first method is to remove the SecHealthUI package which totally and permanently disables Defender. 
+- The first method is to remove the SecHealthUI package which totally and permanently disables Defender.
 - The second method is to apply the Dormant Defender parameter which provides greater flexibility in controlling Microsoft Defender.
 
 ***Option #1 - remove the SecHealthUI package and permanently disable Defender***
-			
+
 - For Windows 10: Remove SecHealthUI from System Applications. See [GitHub-DrEmpiricism](https://github.com/DrEmpiricism/Optimize-Offline#about-system-applications)
 - For Windows 11: SecHealthUI removal is handled by your chosen WindowsApps list. See [GitHub-gdeliana](https://github.com/gdeliana/Optimize-Offline/blob/master/README.md#using-component-removal-lists)
 
 ***Option #2 - Apply the Dormant Defender parameter to gain full control of Defender***
 
-For all Windows builds. The Dormant Defender parameter applies entries and values to the image registry hives forcing Microsoft Defender into an inactive state. 
+For all Windows builds. The Dormant Defender parameter applies entries and values to the image registry hives forcing Microsoft Defender into an inactive state.
 Dormant Defender fully disables Microsoft Defender, but by leaving the application and folder structure intact, retains the possibility to restore it to full functionality.
 
-To re-enable Defender apply the "Microsoft Defender Enable" script [GitHub-TairikuOokami](https://github.com/TairikuOokami/Windows/blob/main/Microsoft%20Defender%20Enable.bat). 
+To re-enable Defender apply the "Microsoft Defender Enable" script [GitHub-TairikuOokami](https://github.com/TairikuOokami/Windows/blob/main/Microsoft%20Defender%20Enable.bat).
 
-After Microsoft Defender is restored, retain full control by applying the "ToggleDefender" script [GitHub-AveYo](https://github.com/AveYo/LeanAndMean#toggledefender---lean-and-mean-snippet-by-aveyo-2020-2021). 
+After Microsoft Defender is restored, retain full control by applying the "ToggleDefender" script [GitHub-AveYo](https://github.com/AveYo/LeanAndMean#toggledefender---lean-and-mean-snippet-by-aveyo-2020-2021).
 
 ***Note:***
 
@@ -210,8 +207,6 @@ The ISO parameter allows for two values to be passed to it: 'Prompt' and 'No-Pro
 
 Optimize-Offline calls the COM IMAPI2 interface for file system image building and also opens a binary stream that writes a bootfile sector code to the ISO. This allows for bootable Windows Installation Media ISO creation without the need for 3rd party tools like oscdimg.
 
-Also it's possible to pre-define the Compression level with a json key located in Configuration.json file named: CompressionType, it's values can be one of the following: 'Select', 'None', 'Fast', 'Maximum', 'Solid'. Select will show the selection window of the compression type on runtime.
-
 ### About Defaultuser0 ###
 
 Any time an OEM Windows Image is modified offline, or the System Preparation, Reset and Provisioning Package deployment features are used, there is a chance this ghost account will surface.
@@ -230,7 +225,7 @@ Once you have edited the Configuration.json to your specific optimization requir
 .\Start-Optimize.ps1
 ```
 
-## Using Optimize-Offline as TrustedInstaller ##
+## Using Optimize-Offline as TrustedInstaller
 
 Running Optimize-Offline as Trusted Installer enhances every operation it performs including properly unloading the image. This enhanced capability is provided by the "Start-Optimize-BAU-TI.ps1" script. The script is a the custom-made version of the generic "RunAsTI" script [GitHub-AveYo](https://github.com/AveYo/LeanAndMean/blob/main/RunAsTI.bat) and includes a unique solution for providing the power of Trusted Installer, but still correctly loading the HKCU USER hive as opposed to Window's natively loading the TI SYSTEM hive.
 
@@ -241,6 +236,34 @@ Once you have edited the Configuration.json to your specific optimization requir
 ```PowerShell
 .\Start-Optimize-BAU-TI.ps1
 ```
+
+## Using Optimize-Offline GUI
+
+For now there exists also a simple GUI variant that just prepares configuration.json file and is able to launch the script.
+
+To use the GUI version of the script, please run/double click:
+
+```
+.\Start-GUI.bat
+```
+
+Below you will find a detailed explanation of each of the GUI sections:
+
+* Source select button - Opens a file picker dialog. Choose the source of the modification process.
+* Output select button - Opens a file save dialog, where the modified output will be saved. By default the output is saved in a automatically created subfolder of the root directory of the script.
+* Refresh lists button - Will obtain all the available items for removal from the selected media. This automatically happens whenver a source file is chosen.
+* Process button - Launches the Optimize-Offline script and switches to the output tab, to view the console output of the script.
+* Select USB - Select the USB where to flash the modified target file
+* UEFI/LEGACY - Select the type of USB to create. Use legacy for older bioses.
+* General tab - contains general options that can be found in the configuration.json. By hovering the mouse on each of the options you will get a brief description of what the option does.
+* Windows Apps - Select the Windows apps to remove/protect from removal. Blacklist will remove the selected apps, whereas whitelist will remove the not selected.
+* System Apps - Select the System inbox apps to remove (some of them may render the installation unbootable). Blacklist will remove the selected system apps, whereas whitelist will remove the not selected.
+* Capabilities - Removes windows capabilities. Blacklist will remove the selected capabilities, whereas whitelist will remove the not selected.
+* Packages - Removes windows packages. Blacklist will remove the selected packages, whereas whitelist will remove the not selected.
+* Features - Sets the windows feature to enable or disable.
+* Services - Sets the startup of the windows services. BE CAREFUL!! not all the items listed are windows services. Due to the registry key containing also items such driver services that are not normal windows services.
+* Custom registry - Injects registry tweaks into the installation
+* Output - Shows an embeded console of the Optimize-Offline script output.
 
 ## Using component removal lists
 
@@ -260,6 +283,7 @@ The template files can be filled by launching the script with the populateTempla
 ```
 
 In configuration.json the list parameters are the following:
+
 - WindowsApps - (All, None, Select, Whitelist, Blacklist), lists are in ./Content/Lists/WindowsApps
 - SystemApps - (All, None, Select, Whitelist, Blacklist), lists are in ./Content/Lists/SystemApps
 - Capabilities - (All, None, Select, Whitelist, Blacklist), lists are in ./Content/Lists/Capabilities
@@ -283,13 +307,25 @@ Code:
 
 Please note that the interactive filling of lists, will fill the list chosen in configuration.json. So first set up configuration.json with the proper list method!! If no list methods are specified in configuration.json the populateLists will just populate the templates, as it doesn't have info about which lists to fill, so it will be basically the same behaviour like populateTemplates.
 
+## Flashing to USB
+
+In order to flash to an USB device, please set the key FlashToUSB to "UEFI" or "Legacy" value.
+The Legacy option uses `\boot\bootsect.exe /nt60` method.
+The UEFI method creates a special UEFI partition in the USB drive and then sets it as bootable.
+Depending on your bios capabilities and on the boot method, choose the right method for your PC.
+
+## Custom Icons
+
+You can customize the icons of the windows local disk volume and of the ISO/USB volumes.
+To set a custom windows local disk icon place it under `Content\Assets\windows.ico`
+To set a custom USB drive/ISO disk icon place it under `Content\Assets\setup.ico`
 
 ## Windows services removal
 
 ***==Services Template==***
 Use populateTemplates feature to assign your images available services to ServicesTemplate.json
-    Some filtering out of non-service related entries is complete in the provided ServicesTemplate.json, but each OS requires more filtering.   
-   
+    Some filtering out of non-service related entries is complete in the provided ServicesTemplate.json, but each OS requires more filtering.
+
 ***==List==***
 Set the Services parameter in configuration.json: List
 Assigns the start behavior of the services listed in ServicesList.json to "Disabled"
@@ -309,13 +345,27 @@ Useful for specifying any type of start behavior (including "4" "Disabled") to t
         }
     . . . from /Content/Lists/Services/ServicesTemplate.json -> /Content/Lists/Services/ServicesAdvanced.json
 
+## Selecting the output path and filename
+
+You can override the default path for ISO/WIM/SWM/ESD files by entering a specific path with an optional filename in Configuration.json "OutputPath" key. The possible key values are the following:
+
+- default - is the default value for this setting and represents the default behavior of the script
+- select - will popup a save file dialog for ISO input and a choose directory dialog for WIM/SWM/ESD inputs
+- your specific path - you can as well specify the exact path of the output. For WIM/SWM/ESD files the path will chose only the directory path and any filename will be ignored.
+- your specific path with {filename} variable for ISO inputs - The name of the ISO can be left to the script to be specified automatically based on the filename convention: {Windows_Edition}_{Build_nr}.ISO (ex. Professional_22000.ISO)
+
 ## Selective registry tweaks
 
 - DisableWindowsUpgrade - Tweak will prevent windows update from receiving cummulative updates and feature updates
-- DisableWindowsUpdateMicrosoft - Applies the official developers solution to prevents Windows Update from connecting to Microsoft update services. This includes connecting to the MS Store to download apps. [Microsoft Document] (https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-wu) Easy to turn on an off using a toggle script [GitHub Gist] (https://gist.github.com/espanafly/3041ce74cd2493d349e58c31630f98e5) 
+- DisableWindowsUpdateMicrosoft - Applies the official developers solution to prevents Windows Update from connecting to Microsoft update services. This includes connecting to the MS Store to download apps. [Microsoft Document] (https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#bkmk-wu) Easy to turn on an off using a toggle script [GitHub Gist] (https://gist.github.com/espanafly/3041ce74cd2493d349e58c31630f98e5)
 - DisableDriverUpdate - Will disable windows update from updating hw drivers
 - DormantOneDrive - Disables the startup installation of Onedrive, but allows you to manually install by using the dormant physical setup file
 - Disable3rdPartyApps - Will remove the 3rd party apps installed with windows
-- W11ClassicInterface - Will make the context menu look like in W10 and add the UI ribbon of W10 in explorer
+- W11ClassicContextMenu - Will make the context menu look like in W10 (builds >= 22000)
+- ExplorerUIRibbon - Enables the classic explorer UI ribbon (not available on builds >= 22500)
 - ClassicSearchExplorer - Tweak is needed in case you uninstall Search app or when applying the /Content/Additional/Setup/Set-Additional.ps1 on an online image. Works only on builds higher than 18363.
 - RemoveTaskbarPinnedIcons - Tries to remove based on system version the automatically pinned taskbar icons
+- DisableTeamsApp - Will remove Microsoft Teams from installing at the first logon
+- DisableVirtualizationSecurity - Disables Core integrity and Virtualization based security (builds >= 22000)
+- RunAsTiContextMenu - Adds Powershell as trusted installer context menu entry
+- AmoledBlackTheme - Enables pitch black AMOLED theme on W10 and W11 all builds

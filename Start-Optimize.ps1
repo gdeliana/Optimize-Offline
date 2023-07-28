@@ -16,25 +16,35 @@
 [CmdletBinding()]
 Param (
 	[Parameter(Mandatory = $false)] [switch]$populateLists,
-	[Parameter(Mandatory = $false)] [switch]$populateTemplates
+	[Parameter(Mandatory = $false)] [switch]$populateTemplates,
+	[Parameter(Mandatory = $false)] [switch]$GUI,
+	[Parameter(Mandatory = $false)] [int]$FlashUSBDriveNumber = -1
 )
 
 $Global:Error.Clear()
 
 # Ensure we are running with administrative permissions.
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
-	$arguments = @(" & '" + $MyInvocation.MyCommand.Definition + "'")
+	$arguments = @(" Set-ExecutionPolicy Bypass -Scope Process -Force; & '" + $MyInvocation.MyCommand.Definition + "'")
 	foreach ($param in $PSBoundParameters.GetEnumerator()) {
-		$arguments += "-"+[string]$param.Key+$(If ($param.Value -notin @("True", "False")) {"="+$param.Value} Else {""})
+		$arguments += "-"+[string]$param.Key+$(If ($null -ne $param.Value -and $param.Value -ne "" -and $param.Value -notin @("True", "False")) {" '"+$param.Value+"'"} Else {""})
 	}
-	$arguments += " ; pause"
+	If(!$GUI){
+		$arguments += " ; pause"
+	}
 	Start-Process powershell -Verb RunAs -ArgumentList $arguments
 	Stop-Process -Id $PID
 }
 
+$configration_selected = "Configuration.json"
+
+If (Test-Path -Path (Join-Path -Path $PSScriptRoot -ChildPath "Configuration_custom.json")) {
+	$configration_selected = "Configuration_custom.json"
+}
+
 # Ensure the configuration JSON file exists.
-If (!(Test-Path -Path (Join-Path -Path $PSScriptRoot -ChildPath Configuration.json))) {
-	Write-Warning ('The required configuration JSON file does not exist: "{0}"' -f (Join-Path -Path $PSScriptRoot -ChildPath Configuration.json))
+If (!(Test-Path -Path (Join-Path -Path $PSScriptRoot -ChildPath $configration_selected))) {
+	Write-Warning ('The required configuration JSON file does not exist: "{0}"' -f (Join-Path -Path $PSScriptRoot -ChildPath $configration_selected))
 	Start-Sleep 3
 	Exit
 }
@@ -46,12 +56,12 @@ If ((Test-Path -Path Variable:\ContentJSON) -or (Test-Path -Path Variable:\Confi
 
 # Use a Try/Catch/Finally block in case the configuration JSON file URL formatting is invalid so we can catch it, correct its formatting and continue.
 Try {
-	$ContentJSON = Get-Content -Path (Join-Path -Path $PSScriptRoot -ChildPath Configuration.json) -Raw | ConvertFrom-Json
+	$ContentJSON = Get-Content -Path (Join-Path -Path $PSScriptRoot -ChildPath $configration_selected) -Raw | ConvertFrom-Json
 }
 Catch [ArgumentException] {
-	$ContentJSON = (Get-Content -Path (Join-Path -Path $PSScriptRoot -ChildPath Configuration.json) -Raw).Replace('\', '\\') | Set-Content -Path (Join-Path -Path $Env:TEMP -ChildPath Configuration.json) -Encoding UTF8 -Force -PassThru
+	$ContentJSON = (Get-Content -Path (Join-Path -Path $PSScriptRoot -ChildPath $configration_selected) -Raw).Replace('\', '\\') | Set-Content -Path (Join-Path -Path $Env:TEMP -ChildPath $configration_selected) -Encoding UTF8 -Force -PassThru
 	$ContentJSON = $ContentJSON | ConvertFrom-Json
-	Move-Item -Path (Join-Path -Path $Env:TEMP -ChildPath Configuration.json) -Destination $PSScriptRoot -Force
+	Move-Item -Path (Join-Path -Path $Env:TEMP -ChildPath $configration_selected) -Destination $PSScriptRoot -Force
 	$Global:Error.Remove($Error[-1])
 }
 Finally {
@@ -59,10 +69,7 @@ Finally {
 }
 
 # Convert the JSON object into a nested ordered collection list. We use the PSObject.Properties method to retain the JSON object order.
-$ConfigParams = [Ordered]@{
-	populateLists     = $populateLists
-	populateTemplates = $populateTemplates
-}
+$ConfigParams = [Ordered]@{ }
 ForEach ($Name In $ContentJSON.PSObject.Properties.Name) {
 	$Value = $ContentJSON.PSObject.Properties.Item($Name).Value
 	If ($Value -is [PSCustomObject]) {
@@ -74,6 +81,12 @@ ForEach ($Name In $ContentJSON.PSObject.Properties.Name) {
 	Else {
 		$ConfigParams.$Name = $Value
 	}
+}
+$ConfigParams.populateLists = $populateLists
+$ConfigParams.populateTemplates = $populateTemplates
+
+If ($FlashUSBDriveNumber -ge 0){
+	$ConfigParams.FlashUSBDriveNumber = $FlashUSBDriveNumber
 }
 
 # Import the Optimize-Offline module and call it by passing the JSON configuration.
@@ -106,4 +119,21 @@ Else {
 	}
 }
 
-Optimize-Offline @ConfigParams
+If ($GUI){
+	Try{
+		Optimize-Offline @ConfigParams
+	} Catch {
+		$formatstring = "{0} : {1}`n{2}`n" +
+									"    + CategoryInfo          : {3}`n" +
+									"    + FullyQualifiedErrorId : {4}`n"
+		$fields = $_.InvocationInfo.MyCommand.Name,
+						$_.ErrorDetails.Message,
+						$_.InvocationInfo.PositionMessage,
+						$_.CategoryInfo.ToString(),
+						$_.FullyQualifiedErrorId
+		Write-Host -Foreground Red ($formatstring -f $fields)
+		Exit
+	}
+} Else {
+	Optimize-Offline @ConfigParams
+}
